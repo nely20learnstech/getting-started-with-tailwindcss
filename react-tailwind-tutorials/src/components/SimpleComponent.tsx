@@ -11,35 +11,35 @@ import React from 'react'
 export const SimpleComponent = () => {
   return (
     <>
-      <div className='p-20'>
-        <h2 className='mb-4'>Spacing Section</h2>
-        <p>Tailwind helps us space things out with margin and padding.</p>
-        <button className='mr-3 py-2 px-4'>Learn More</button>
-        <button className='py-2 px-8'>Sign Up</button>
+      <div className='p-20 bg-green-700'>
+        <h2 className='mb-2 text-5xl font-bold text-green-100'>Spacing Section</h2>
+        <p className="mb-6 text-green-200 text-xl">Tailwind helps us space things out with margin and padding.</p>
+        <button className='mr-3 py-2 px-4 bg-purple-600 hover:bg-purple-500 text-purple-100 rounded transition duration-300'>Learn More</button>
+        <button className='py-2 px-8 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 rounded transition duration-300 shadow-lg'>Sign Up</button>
       </div>
 
       {/* background, borders, rounding (border radius), shadows */}
       <div className='p-20 bg-blue-400'>
-        <h2 className='mb-4'>Box Properties</h2>
+        <h2 className='mb-4 text-4xl text-blue-800'>Box Properties</h2>
         <div  className='p-10 bg-purple-400 rounded-lg border
-        border-purple-500 shadow-2xl'>I am a box</div>
+        border-purple-500 shadow-2xl text-purple-700 text-center font-bold uppercase tracking-widest'>I am a box</div>
       </div>  
       
       {/* sizing & numbering */}
-      <div className="p-20 bg-orange-300">
-        <button className='p-4 bg-green-400 rounded w-8'>Click me</button>
-        <button className='p-4 bg-green-400 rounded w-12'>Click me</button>
-        <button className='p-4 bg-green-400 rounded w-20'>Click me</button>
-        <button className='p-4 bg-green-400 rounded w-32'>Click me</button>
-        <button className='p-4 bg-green-400 rounded w-48 h-48'>Click me</button>
+      <div className="py-20 px-10 bg-orange-300">
+        <button className='p-4 m-2 bg-orange-400 text-orange-900 rounded w-8'>Click me</button>
+        <button className='p-4 m-2 bg-orange-400 text-orange-900 rounded w-12'>Click me</button>
+        <button className='p-4 m-2 bg-orange-400 text-orange-900 rounded w-20'>Click me</button>
+        <button className='p-4 m-2 bg-orange-400 text-orange-900 rounded w-32'>Click me</button>
+        <button className='p-4 m-2 bg-orange-400 text-orange-900 rounded w-48 h-48'>Click me</button>
       </div>
 
 
       {/* typography */}
 
       <div className='p-20 text-gray-800 leading-relaxed text-lg'>
-        <h2 className='mb-2 text-4xl text-gray-700 font-semibold tracking-wide'>Learning Tailwind is Fun!</h2>
-        <h3 className='mb-8 text-2xl text-gray-500'>More fun than I expected!</h3>
+        <h2 className='mb-4 text-5xl text-gray-700 font-semibold tracking-wide'>Learning Tailwind is Fun!</h2>
+        <h3 className='mb-8 text-2xl text-blue-400'>More fun than I expected!</h3>
 
         <p className='mb-8 '>I love I love tart cookie cotton candy.
            Tiramisu marshmallow gummies icing candy canes candy jujubes tiramisu. 
@@ -84,10 +84,20 @@ export const SimpleComponent = () => {
         <div className='p-4 rounded-lg bg-blue-600 text-blue-200 border border-blue-700'>I am box</div>
       </div>
 
-      <div className="min-h-screen flex items-center justify-center">
+      {/* <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 via-red-400 to-purple-400"> */}
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100  to-purple-100">
+
         {/* API of doing the gradients */}
-        {/*  */}
-        <h1 className="text-6xl font-bold">Whoa Gradients</h1>
+        {/* 1. Set a class for the gradient
+            2. Set a starting color
+            3. Set an end color
+            4. Set a middle color
+        */}
+        <h1 className="text-6xl font-bold 
+          bg-clip-text bg-gradient-to-br text-transparent 
+          from-blue-600 to-purple-800">
+          Whoa Gradients
+        </h1>
       </div>
     </>
   )
