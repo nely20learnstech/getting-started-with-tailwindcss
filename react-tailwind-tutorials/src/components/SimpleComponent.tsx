@@ -3,8 +3,7 @@
 
 
 // colors
-// pseudo-classes 
-// transitions & transforms 
+
 // animations
 
 import React from 'react'
@@ -38,11 +37,11 @@ export const SimpleComponent = () => {
 
       {/* typography */}
 
-      <div className='p-20'>
-        <h2 className='mb-2 text-4xl'>Learning Tailwind is Fun!</h2>
-        <h3 className='mb-10 text-2xl'>More fun than I expected!</h3>
+      <div className='p-20 text-gray-800 leading-relaxed text-lg'>
+        <h2 className='mb-2 text-4xl text-gray-700 font-semibold tracking-wide'>Learning Tailwind is Fun!</h2>
+        <h3 className='mb-8 text-2xl text-gray-500'>More fun than I expected!</h3>
 
-        <p className='mb-8'>I love I love tart cookie cotton candy.
+        <p className='mb-8 '>I love I love tart cookie cotton candy.
            Tiramisu marshmallow gummies icing candy canes candy jujubes tiramisu. 
            Pie cookie tart I love candy apple pie sweet roll chupa chups. 
            Topping jujubes gummi bears pastry I love halvah oat cake chocolate bar. 
@@ -65,6 +64,30 @@ export const SimpleComponent = () => {
            Candy gummies oat cake brownie pie I love cheesecake chupa chups. 
            Lemon drops macaroon oat cake tiramisu marzipan oat cake. 
           Gingerbread wafer jelly-o tiramisu lollipop liquorice bonbon.</p>
+      </div>
+
+      {/* Color and pseudo-class: hover  */}
+      <div className='p-20 bg-gray-800 space-y-3'>
+        {/* transitions with duration  */}
+        {/* trasform with translate and scale */}
+        <div className='p-4 rounded-lg bg-red-100 text-red-900 
+        hover:bg-red-900 hover:text-red-100 hover:translate-x-4 transform
+        transition duration-500'>I am box</div>
+        <div className='p-4 rounded-lg bg-red-200 hover:scale-105 transition duration-300'>I am box</div>
+        <div className='p-4 rounded-lg bg-red-300'>I am box</div>
+        <div className='p-4 rounded-lg bg-red-400 animate-bounce'>I am box</div>
+        <div className='p-4 rounded-lg bg-red-500 animate-pulse'>I am box that pulses</div>
+        <div className='p-4 rounded-lg bg-red-600 text-red-100'>I am box</div>
+        {/* <div className='p-4 rounded-lg bg-red-700 text-red-100 animate-ping'>I am box</div> */}
+        <div className='p-4 rounded-lg bg-red-800 text-red-200'>I am box</div>
+        {/* <div className='p-4 rounded-lg bg-red-900 text-red-300 animate-spin'>I am box</div> */}
+        <div className='p-4 rounded-lg bg-blue-600 text-blue-200 border border-blue-700'>I am box</div>
+      </div>
+
+      <div className="min-h-screen flex items-center justify-center">
+        {/* API of doing the gradients */}
+        {/*  */}
+        <h1 className="text-6xl font-bold">Whoa Gradients</h1>
       </div>
     </>
   )
